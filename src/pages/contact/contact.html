@@ -1,0 +1,64 @@
+<ion-header>
+ 
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!-- <ion-title>AC Service</ion-title> -->
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+
+  <ion-card class="ion-cards">
+
+  <ion-card-header align ="center">
+    <strong class="header">AC Service</strong>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list class ="contact">
+
+      <ion-item class="text">
+            <ion-label>Service required:</ion-label>
+            <ion-select [(ngModel)]="service">
+                <ion-option value="New Installation">New Installation</ion-option>
+                <ion-option value="Re-Installation">Re-Installation</ion-option>
+                <ion-option value="No cooling">No Cooling</ion-option>
+                <ion-option value="Water leakage">Water leakage</ion-option>
+                <ion-option value="Low Cooling">Low Cooling</ion-option>
+                <ion-option value="Noise and Vibration">Noise & Vibration</ion-option>
+                <ion-option value="Maintanence service">Maintanence service</ion-option>
+                <ion-option value="Normal service">Normal service</ion-option>
+                <ion-option value="Complete service">Complete service</ion-option>
+            </ion-select>
+        </ion-item>
+
+  <ion-item class="text">
+    <ion-input type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+   <ion-item class="text">
+    <ion-input type="text" placeholder="Contact Number" [(ngModel)]="contactNumber"></ion-input>
+  </ion-item>
+
+  <ion-item class="text">
+    <ion-input type="text" placeholder="Email-Id" [(ngModel)]="emailId"></ion-input>
+  </ion-item>
+
+  <ion-item class="text">
+    <ion-input type="text" placeholder="Message(optional)" [(ngModel)]="message"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+ <button ion-button block class="button" (click)="contactUs()">contact-us</button>
+  </ion-card-content>
+
+</ion-card>
+
+
+
+</ion-content>

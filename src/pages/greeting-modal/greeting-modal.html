@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>greetingModal</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background" align="center">
+  <img src="img/logo.png" class="animate-right" width='auto' height='auto' />
+  <div class="animate-bottom">
+    <div class="div">
+      <img src="img/customer-service.png" class="animate-right" width='50%' height='50%' />
+
+      <h1 class="header">Thanks for contacting us</h1>
+      <video class="bg-vid" preload="auto" autoplay playsinline muted loop>
+        <source src="img/video.mp4">
+      </video>
+      <p class="paraText"><strong>Soon our team will get back to you. For emergency call our toll free number.</strong></p>
+    </div>
+  </div>
+</ion-content>

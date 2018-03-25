@@ -1,0 +1,41 @@
+page-login {
+    
+
+    .loginbutton{
+
+       // height: 90px;
+       align-items: center;
+        width: 300px;
+        position: absolute;
+        margin: auto;
+        bottom: 5px;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        border: 3px solid green;
+        padding: 10px;
+        -webkit-text-fill-color: green;
+        background-color: rgba(50, 50, 50, 0.9);
+        
+    }
+
+    .inputfields{
+        margin-top: 150px;
+        position: relative;
+        
+    }
+
+    .inputfieldsUsername{
+        background-color: rgba(40, 40, 40, 0.5);
+    }
+
+    .inputfieldspassword{
+         background-color: rgba(40, 40, 40, 0.5);
+    }
+
+    .background{
+ background: url('../img/bg.jpg');
+ background-repeat: no-repeat;
+ background-size:cover;
+}
+}
